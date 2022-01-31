@@ -1,7 +1,8 @@
-# P7_blanvillain_eric
+**P7_blanvillain_eric**
 
 # Implémentez un modèle de scoring
 120 hours
+
 Last updated on Thursday, November 25, 2021
 
 # Introduction
