@@ -1,4 +1,4 @@
-# App_credit
+# Dashboard
 
 La société « Prêt à dépenser » propose des crédits à la consommation.
 
