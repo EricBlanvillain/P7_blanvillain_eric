@@ -21,7 +21,7 @@ st.markdown("<h1 style='text-align: center; color: #E2383F;'><strong>📈 PRET A
 st.markdown("<h4 style='text-align: center'><i>“interactif dashboard”</i></h4>", unsafe_allow_html=True)
 st.markdown("***")
 
-DATA_FILE = 'data_final.csv'
+DATA_FILE = './data_final.csv'
 
 # Load
 @st.cache(persist = True)
@@ -41,7 +41,7 @@ def load_all():
 
     def load_model():
         # load
-        model = load('best_model.joblib')
+        model = load('./best_model.joblib')
         return model
     # Load model
     model = load_model()
