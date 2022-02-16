@@ -1,5 +1,7 @@
 **P7_blanvillain_eric**
 
+**url** = https://github.com/EricBlanvillain/P7_blanvillain_eric
+
 # Implémentez un modèle de scoring
 120 hours
 
