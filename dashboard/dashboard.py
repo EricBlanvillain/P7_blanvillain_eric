@@ -13,6 +13,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import plotly
 import shap
+from pathlib import Path
 
 
 # Title
@@ -21,7 +22,8 @@ st.markdown("<h1 style='text-align: center; color: #E2383F;'><strong>📈 PRET A
 st.markdown("<h4 style='text-align: center'><i>“interactif dashboard”</i></h4>", unsafe_allow_html=True)
 st.markdown("***")
 
-DATA_FILE = './data_final.csv'
+DATA_FILE = Path(__file__).parents[1] / 'dashboard/data_final.csv'
+MODEL_FILE = Path(__file__).parents[1] / 'dashboard/best_model.joblib'
 
 # Load
 @st.cache(persist = True)
@@ -41,7 +43,7 @@ def load_all():
 
     def load_model():
         # load
-        model = load('./best_model.joblib')
+        model = load(MODEL_FILE)
         return model
     # Load model
     model = load_model()
