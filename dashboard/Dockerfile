@@ -26,7 +26,7 @@ RUN cp credentials.toml ~/.streamlit/credentials.toml
 WORKDIR /app
 
 # Lance Flask
-CMD ["python", "API.py"]
+CMD ["python", "api_flask.py"]
 
 # Lance streamlit
 ENTRYPOINT ["streamlit", "run"]
