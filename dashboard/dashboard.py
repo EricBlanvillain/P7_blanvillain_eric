@@ -249,11 +249,13 @@ if st.sidebar.button("Gender"):
         left_column_1.header("**Stats : gender**")
         left_column_1.success("**Gender of the selected client** : **{}** ".format(client_gender))
         st.subheader('Distribution of code gender for all targets')
+        
         img_status =  Image.open("Images/code_gender_1.png")
         st.image(img_status,
                     width=400)
         st.subheader('Percentage of **defaulters** for each category of code gender')
-        img_status =  Image.open("Images/code_gender_2.png")
+        IMG_FILE_GD = Path(__file__).parents[1] / 'dashboard/Images/code_gender_2.png'
+        img_status =  Image.open(IMG_FILE_GD)
         st.image(img_status,
                     width=400)
 
@@ -265,11 +267,13 @@ if st.sidebar.button("Family status"):
         left_column_1.header("**Stats : family status**")
         left_column_1.success("**Family status of the selected client** : **{}** ".format(client_status))
         st.subheader('Distribution of family status')
-        img_status =  Image.open("Images/status_1.png")
+        IMG_FILE_ST = Path(__file__).parents[1] / 'dashboard/Images/status_1.png'
+        img_status =  Image.open(IMG_FILE_ST)
         st.image(img_status,
                     width=600)
         st.subheader('Percentage of **defaulters** for each category of family status')
-        img_status =  Image.open("Images/status_2.png")
+        IMG_FILE_ST_2 = Path(__file__).parents[1] / 'dashboard/Images/status_2.png'
+        img_status =  Image.open(IMG_FILE_ST_2)
         st.image(img_status,
                     width=600)
 # Education
@@ -280,11 +284,13 @@ if st.sidebar.button("Education "):
         left_column_1.header("**Stats : Education type**")
         left_column_2.success("**Education type of the selected client** : **{}** ".format(client_education))
         st.subheader('Distribution of education type')
-        img_status =  Image.open("Images/education_1.png")
+        IMG_FILE_EDU_1 = Path(__file__).parents[1] / 'dashboard/Images/education_1.png'
+        img_status =  Image.open(IMG_FILE_EDU_1)
         st.image(img_status,
                     width=600)
         st.subheader('Percentage of **defaulters** for each category of education')
-        img_status =  Image.open("Images/education_2.png")
+        IMG_FILE_EDU_2 = Path(__file__).parents[1] / 'dashboard/Images/education_1.png'
+        img_status =  Image.open(IMG_FILE_EDU_2)
         st.image(img_status,
                     width=600)
 
@@ -329,11 +335,13 @@ if st.sidebar.button("Income type"):
         left_column_1.header("**Stats : income type**")
         left_column_1.success("**Income type of the selected client** : **{}** ".format(client_work))
         st.subheader('Distribution of income type')
-        img_status =  Image.open("Images/income_type_1.png")
+        IMG_FILE_INC_1 = Path(__file__).parents[1] / 'dashboard/Images/income_type_1.png'
+        img_status =  Image.open(IMG_FILE_INC_1)
         st.image(img_status,
                     width=400)
         st.subheader('Percentage of **defaulters** for each category of income type')
-        img_status =  Image.open("Images/income_type_2.png")
+        IMG_FILE_INC_2 = Path(__file__).parents[1] / 'dashboard/Images/income_type_2.png'
+        img_status =  Image.open(IMG_FILE_INC_2)
         st.image(img_status,
                     width=400)
 
@@ -376,11 +384,13 @@ if st.sidebar.button("Contract type"):
         left_column_1.header("**Stats : contract type**")
         left_column_1.success("**Type of loan of the selected client** : **{}** ".format(client_contract))
         st.subheader('Distribution of contract type')
-        img_status =  Image.open("Images/contract_1.png")
+        IMG_FILE_CT_1 = Path(__file__).parents[1] / 'dashboard/Images/contract_1.png'
+        img_status =  Image.open(IMG_FILE_CT_1)
         st.image(img_status,
                     width=400)
         st.subheader('Percentage of **defaulters** of contract type for all targets')
-        img_status =  Image.open("Images/contract_2.png")
+        IMG_FILE_CT_2 = Path(__file__).parents[1] / 'dashboard/Images/contract_2.png'
+        img_status =  Image.open(IMG_FILE_CT_2)
         st.image(img_status,
                     width=400)
 
@@ -397,7 +407,8 @@ def shap_explainer():
             st.write('*__Force plot__ shows, how opposite are the features strenghs*')
             if st.sidebar.checkbox("SHAP / Hide", value = True):
                 st.write('**SHAP HELP**')
-                img_help_shap =  Image.open("Images/shap_explain.png")
+                IMG_FILE_SHAP = Path(__file__).parents[1] / 'dashboard/Images/shap_explain.png'
+                img_help_shap =  Image.open(IMG_FILE_SHAP)
                 st.image(img_help_shap,
                         width=700)
 
