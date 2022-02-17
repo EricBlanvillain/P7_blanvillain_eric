@@ -162,7 +162,8 @@ left_column_1.markdown('Prediction Score for similar clients : **{0:.1f}**'.form
 ###############      SIDEBAR        #######################
 
 # Chargement du logo
-logo =  Image.open("Images/pret_logo.png")
+LOGO_FILE = Path(__file__).parents[1] / 'dashboard/Images/pret_logo.png'
+logo =  Image.open(LOGO_FILE)
 st.sidebar.image(logo,
                 width=240,
                 caption="by EB")
