@@ -31,3 +31,4 @@ CMD ["python", "api_flask.py"]
 # Lance streamlit
 ENTRYPOINT ["streamlit", "run"]
 CMD ["dashboard.py"]
+ 
