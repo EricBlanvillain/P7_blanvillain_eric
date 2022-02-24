@@ -1,6 +1,7 @@
 **P7_blanvillain_eric**
 
-**url** = https://github.com/EricBlanvillain/P7_blanvillain_eric
+**Github** = https://github.com/EricBlanvillain/P7_blanvillain_eric
+**Streamlit** = https://share.streamlit.io/ericblanvillain/p7_blanvillain_eric/main/dashboard/dashboard.py
 
 # Implémentez un modèle de scoring
 120 hours
